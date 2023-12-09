@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* ------------header------------------- */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    width: 40px;
+    margin: 20px;
+}
+header span{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 20px 40px;
+}
+/* --------------container1------------- */
+.container1{
+    background-image: url(assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color:white;
+}
+.home{
+    text-align: center;
+    padding-top: 60px;
+}
+.home img{
+    width: 45%;
+}
+.home p{
+    margin: 10px 11%;
+    font-size: 30px;
+    font-weight: 500;
+    height: 60%;
+}
+l{
+    color: #e29741;
+}
+#searchbox{
+    display: flex;
+    margin: 40px;
+    margin-left: 35%;
+}
+input{
+    width: 40%;
+    height: 40px;
+    border-radius: 10px;
+    outline: 0px;
+    border: 0px solid black;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: .6;
+}
+#searchbox img{
+    width: 60px;
+    margin-left: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: .8;
+    
+}
+#scrollnow{
+    margin-top: 0px;
+    width: 7%;
+    margin-left: 47%;
+}
+/* ----------contact-us & credits--slides--------- */
+
+.credits{
+    position: absolute;
+    top: 0;
+    width: 20%;
+    color: white;
+    background-color: black;
+    height: 100vh;
+}
+.contact{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    color: white;
+    background-color: rgb(199, 129, 0);
+    height: 100vh;
+}
+.credits h2, .contact h2{
+    font-size: 35px;
+    margin: 80px 5px;
+}
+.credits p, .contact p{
+    font-size: x-large;
+    font-weight: 500;
+    margin: 10px;
+}
+.credits m{
+    color: blue;
+    cursor: pointer;
+}
+#email{
+    color: blue;
+    cursor: pointer;
+}
+.contact img{
+    width: 90%;
+    margin: 80px 5%;
+    cursor: pointer;
+}
+/* -------------container2------------------ */
+.container2 {
+    background: linear-gradient(to bottom, #da882c, #ffffff);
+    height: 100vh;
+    color: black;
+}
+.container2 div{
+    text-align: center ;
+}
+.container2 img{
+    margin: 15px;
+}
+#todaypick{
+    font-size: 35px;
+    color: white;
+    padding: 25px;
+}
+#random{
+    text-align: center;
+}
+#random img{
+    width: auto;
+    height: 50vh;
+    border-radius: 5px;
+    box-shadow: 6px 7px 17px rgb(41, 40, 40);
+    cursor: pointer;
+}
+#random h3{
+    color: rgb(78, 1, 78);
+    font-weight: 550;
+    font-size: 26px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+/* ----------catogary-displayed------------ */
+#searchresult{
+    text-align: start;
+    margin-left: 6%;
+    font-weight: 550;
+}
+#categoriesdisplay {
+    display: grid;
+    gap: 20px;
+    text-align: center;
+}
+#categoriesdisplay h2{
+    font-size: 35px;
+}
+.griditem {
+    text-align: center;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    padding: 8px;
+    margin-left: 30px;
+    
+}
+.griditem img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 3px 4px 7px rgb(80, 79, 79);
+    cursor: pointer;
+}
+.griditem p {
+    margin-top: 8px;
+    cursor: pointer;
+}
+#categoriesdisplay p{
+    color: rgb(59, 8, 1);
+    font-size: 20px;
+    font-weight: 500;
+}
+/* ---container2-1--Ingredients-Modal---------- */
+.container21 {
+    z-index: 10;
+    position: fixed;
+    z-index: 9;
+    top: 3%;
+    margin-left: 34%;
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(to right, #ec9a00,rgb(191, 193, 201));
+    border-radius: 17px;
+    width: 400px;
+}
+.container21  img{
+    width: 19px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+}
+.container21 h2{
+    color: rgb(170, 0, 0);
+    margin-bottom: 10px;
+}
+#modal p{
+    color:rgb(13, 0, 31);
+    font-size: x-large;
+}
+/* ------------responsive-design---------------- */
+@media only screen and (max-width:660px){
+    .container21{
+        margin-left: 10%;
+        margin-right: 10%;
+        transform: scale(.7);
+    }
+    p,input,img,h2,h3{
+        transform: scale(.8);
+    }
+    #logo{
+        transform: scale(2);
+    }
+    .home p{
+        width: 100%;
+        margin: 10px;
+    }
+    #searchbox{
+        width: 80%;
+        margin-top: -30px;
+        margin-left: 20px
+    }
+    #searchbox input{
+        width: 100%;
+    }
+    #searchbox img{
+        margin-left: -25px;
+    }
+    .griditem {
+        text-align: center;
+        display: block;
+        width: 80%;
+        text-align: center;
+        padding: 2px;
+        margin-left: 20px;
+    }
+    #categoriesdisplay p{
+        transform: scale(1);
+        margin-top: -10px;
+    }
+    .credits{
+        width: 65%;
+    }
+    .contact{
+        left: 113px;
+        width: 70%;
+    }
+    .contact img{
+        transform: scale(.8);
+    }
+    #scrollnow{
+        visibility: hidden;
+    }
+    .container21 p, .container21 img, .container21 h2{
+        transform: scale(1);
+    }
+}
+@media only screen and (max-width:415px){
+    .container21{
+        transform: scale(.6);
+        margin-left: -15%;
+    }
+    
+    .home p{
+        transform: scale(.7);
+        margin-top: -40px;
+    }
+    #searchbox{
+        margin-top: -55px;
+    }
+    header span{
+        transform: scale(.8);
+        margin: 20px 10px;
+    }
+    #random img{
+        margin-left: -10px;
+    }
+}
+/* -------------footer-------------- */
+footer{
+    background-color:#e9ecf0;
+    text-align: center;
+    padding: 15px 0;
+}
+footer img{
+    height: 40px;
+    cursor: pointer;
+}

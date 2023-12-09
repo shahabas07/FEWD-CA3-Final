@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODAYTRIPZY</title>
+    <link rel="shortcut icon" href="assets/ham.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- ----------container1---------------- -->
+    <div class="container1">
+      <!-- -----------header-section------------- -->
+      <header>
+        <img src="assets/ham.png" onclick="openCredits()" />
+        <span onclick="opencontact()">Contact Us</span>
+      </header>
+      <div onclick="closeall()">
+        <!-- ----view-homepage------ -->
+        <div class="home" onclick="closeall()">
+          <img src="assets/Logo.png" id="logo" alt="" />
+          <p>
+            <l>TODAYTRIPZY</l> is a website for help peoples who's facing issues
+            for picking their daily food routine. <l>TODAYTRIPZY</l> will help
+            people to choose their dish by a random dish generator or can pick a
+            dish from our thousands of listed dishes just by clicking on
+            appropriate catogaries..
+          </p>
+        </div>
+        <div id="searchbox">
+          <input
+            type="text"
+            id="search"
+            oninput="getValue()"
+            onclick="document.getElementById('searchresult').style.display='block'"
+            name="search"
+            placeholder="Ex:  Seafood, Chicken.."
+          />
+          <img src="assets/searchbutton.png" onclick="getValue()" alt="" />
+        </div>
+
+        <!-- <a href="#random"><img id="scrollnow" src="assets/scroll.png" alt="" /></a> -->
+      </div>
+    </div>
+    <!-- ------credits-slide--------- -->
+    <div class="credits" onclick="closeall()" id="credits" style="display: none">
+      <h2>Credits:</h2>
+      <p>
+        This a random food choosing website made by shahabas aman inspired from
+        website called <a href="https://www.themealdb.com/"><m>“TheMealDB”<m></a> for study purpose only
+      </p>
+    </div>
+    <!-- -----ContactUs-Slide-------- -->
+    <div class="contact" onclick="closeall()" id="contact" style="display: none">
+      <h2>Contact Details.</h2>
+      <p>xyz</p>
+      <p>phone:456789</p>
+    <p id="email">email@abc.com</p>
+      <p>hgdhgd, dgwyd, wgd (685077)</p>
+      <a href="https://www.themealdb.com/"><img src="assets/footer.png" alt=""></a>
+    </div>
+
+    <!-- -----------Container2--------------- -->
+    <div class="container2">
+      <!-- --------food-suggestion-section-------- -->
+      <div>
+        <h2 id="todaypick">Today's Pick</h2>
+        <div id="random"></div>
+
+        <!-- --------ingredients-Modal-Container2.1----- -->
+        <div class="container21" id="container21" style="display: none">
+          <span
+            ><h2 id="Ingredientheading" style="display: none">Ingredients:</h2>
+            <img
+              id="closebutton"
+              onclick="closeModal()"
+              src="assets/close.png"
+              style="display: none"
+          /></span>
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <ol id="ingredientList"></ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- -----------catogary-display---------------- -->
+      <div class="searchresult">
+        <br />  <hr />   <br />
+        <p id="searchresult" style="display: none"><u>Search results:</u></p>
+        <div id="categoriesdisplay"></div>
+      </div>
+      <!-- ----------footer------------------------ -->
+      <footer><a href="https://www.themealdb.com/"><img src="assets/footer.png" alt=""></a></footer>
+    </div>
+    
+    <script src="scripts.js"></script>
+  </body>
+</html>
